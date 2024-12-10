@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiPurpose Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="converter-container">
+        <h1>MultiPurpose Converter</h1>
+        
+        <!-- Category Selection -->
+        <div>
+            <label for="category">Conversion Category:</label>
+            <select id="category" onchange="updateUnits()">
+                <option value="linear">Linear</option>
+                <option value="volume">Volume</option>
+                <option value="weight">Weight</option>
+                <option value="currency">Currency</option>
+            </select>
+        </div>
+        
+        <!-- Input for Conversion -->
+        <div>
+            <label for="inputValue">Value:</label>
+            <input type="number" id="inputValue" placeholder="Enter value" required>
+        </div>
+
+        <!-- From Unit Selection -->
+        <div>
+            <label for="fromUnit">From:</label>
+            <select id="fromUnit"></select>
+        </div>
+
+        <!-- To Unit Selection -->
+        <div>
+            <label for="toUnit">To:</label>
+            <select id="toUnit"></select>
+        </div>
+
+        <!-- Convert Button -->
+        <div>
+            <button onclick="convert()">Convert</button>
+        </div>
+
+        <!-- Display the Result -->
+        <div id="result" class="result"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+

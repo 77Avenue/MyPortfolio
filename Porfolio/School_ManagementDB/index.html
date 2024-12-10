@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>School Management System</h1>
+
+        <div class="section">
+            <h2>Student Management</h2>
+            <form id="addStudentForm">
+                <input type="text" id="first_name" placeholder="First Name" required>
+                <input type="text" id="last_name" placeholder="Last Name" required>
+                <input type="text" id="gender" placeholder="Gender" required>
+                <input type="date" id="dob" required>
+                <input type="text" id="address" placeholder="Address" required>
+                <input type="number" id="contact_number" placeholder="Contact Number" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="date" id="enrollment_date" required>
+                <button type="submit">Add Student</button>
+            </form>
+            <div id="student-result"></div>
+            <div>
+                <button id="refresh-btn">Refresh</button>
+            </div>
+            <h2>Students List</h2>
+            <div id="students-list"></div>
+            <button onclick="loadStudents()">Display All Students</button>
+        </div>
+
+        <div class="section">
+            <h2>Classes Management</h2>
+            <form id="addClassForm">
+                <input type="text" id="class-name" placeholder="Class Name" required>
+                <input type="number" id="teacher-id" placeholder="Teacher ID" required>
+                <input type="text" id="schedule" placeholder="Schedule" required>
+                <input type="text" id="room_number" placeholder="Room Number" required>
+                <button type="submit">Add Class</button>
+            </form>
+            <div id="class-result"></div>
+        </div>
+
+        <!-- Modal for confirmation dialog -->
+        <div id="confirmationModal" class="modal">
+            <div class="modal-content">
+                <p id="confirmMessage"></p>
+                <button id="confirmYes">Yes</button>
+                <button id="confirmNo">No</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

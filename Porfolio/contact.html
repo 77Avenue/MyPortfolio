@@ -1,0 +1,105 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>WebOne</h1>
+    </header>
+
+    <nav class="nav-bar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main class="content">
+        <section class="contact-page">
+            <div class="contact-container">
+                <div class="box contact-box">
+                    <h1>Get in touch!</h1>
+                    <!-- Formspree contact form --
+                    
+                    <form action="https://formspree.io/f/xrbgbgwv" method="POST" id="contact-form"> -->
+                        <form action="https://formsubmit.co/euegbo@gamil.com" method="POST" id="contact-form">
+                        
+                            <div class="form-row">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" email="email" required>
+
+                            <label for="phone">Telephone:</label>
+                            <input type="tel" id="phone" phone="phone">
+                        </div>
+
+                        <div class="form-row">
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" subject="subject" >
+                        </div>
+
+                        <div class="form-row">
+                            <label for="message">Message:</label>
+                            <textarea id="message" message ="message" rows="4" required></textarea>
+                        </div>
+
+                        <div class="button-group">
+                            <button type="reset" id="cancel-button">Cancel</button>
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="box map-box">
+                    <h2>Location</h2>
+                    <a href="https://www.google.com/maps/@52.5849562,-0.2566658,14z?entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D" target="_blank">
+                        <img src="MyImages/Google_Map.jpeg" alt="Google Map Location" class="map-image">
+                    </a>
+                </div>
+            </div>
+
+            <div class="gallery">
+                <h3>Gallery</h3>
+                <div class="gallery-container">
+                    <img src="MyImages/PalmTree.jpg" alt="Palm Tree">
+                    <img src="MyImages/LAskylineNight.jpg" alt="Los Beach">
+                    <img src="myImages/losBeach.jpg" alt="Edgar Bridge">
+                    <img src="myImages/Hall-concert.jpg" alt="Hall Concert">
+                </div>
+                <div class="video-container">
+                    <video controls>
+                        <source src="myImages/Tornado.mp4" type="video/mp4">
+                    </video>
+                    <video controls>
+                        <source src="myImages/beachRoad.mp4" type="video/mp4">
+                    </video>
+                    <video controls>
+                        <source src="myImages/abstractWaves.mp4" type="video/mp4">
+                    </video>
+                    <video controls>
+                        <source src="myImages/AutumnForest.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a>&copy; 2024 ETG Ltd. All Rights Reserved. email: euegbo@gmail.com</a>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com" target="_blank"><img src="MyImages/Linkedin.jpg" alt="LinkedIn" class="icon"></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="MyImages/facebook.jpg" alt="Facebook" class="icon"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="myImages/X.jpg" alt="Twitter" class="icon"></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

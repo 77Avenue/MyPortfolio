@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <!-- Row 1 -->
+            <button class="btn" onclick="clearDisplay()">C</button>
+            <button class="btn" onclick="deleteLast()">DEL</button>
+            <button class="btn" onclick="insertOperator('/')">/</button>
+            <button class="btn" onclick="insertOperator('*')">*</button>
+            <!-- Row 2 -->
+            <button class="btn" onclick="insertNumber(7)">7</button>
+            <button class="btn" onclick="insertNumber(8)">8</button>
+            <button class="btn" onclick="insertNumber(9)">9</button>
+            <button class="btn" onclick="insertOperator('-')">-</button>
+            <!-- Row 3 -->
+            <button class="btn" onclick="insertNumber(4)">4</button>
+            <button class="btn" onclick="insertNumber(5)">5</button>
+            <button class="btn" onclick="insertNumber(6)">6</button>
+            <button class="btn" onclick="insertOperator('+')">+</button>
+            <!-- Row 4 -->
+            <button class="btn" onclick="insertNumber(1)">1</button>
+            <button class="btn" onclick="insertNumber(2)">2</button>
+            <button class="btn" onclick="insertNumber(3)">3</button>
+            <button class="btn equal" onclick="calculate()">=</button>
+            <!-- Row 5 -->
+            <button class="btn" onclick="insertNumber(0)">0</button>
+            <button class="btn" onclick="insertDecimal()">.</button>
+            <button class="btn" onclick="insertFunction('sqrt')">√</button>
+            <button class="btn" onclick="insertFunction('square')">x²</button>
+            <!-- Row 6 -->
+            <button class="btn" onclick="insertFunction('sin')">sin</button>
+            <button class="btn" onclick="insertFunction('cos')">cos</button>
+            <button class="btn" onclick="insertFunction('tan')">tan</button>
+            <button class="btn" onclick="insertFunction('log')">log</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

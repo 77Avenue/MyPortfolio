@@ -1,0 +1,71 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:  rgb(81, 81, 83);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    top: 20px;
+    width: 70%;
+    margin: 20px;
+    margin: auto;
+    padding: 20px;
+    background-color:rgba(242, 230, 230, 0.7);
+    border-radius: 80px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+button {
+    width: 97%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    background-color: #eaedeb;
+    border: 1px solid #333
+}
+
+button {
+    width: 100%;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Styles for modal confirmation */
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    margin: 15% auto;
+    width: 30%;
+}

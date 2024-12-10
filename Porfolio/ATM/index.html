@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Machine Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cash-machine">
+        <h1>Cash Machine</h1>
+        <p id="welcome-message">Welcome</p>
+        <div class="display" id="display">Please Enter Your PIN</div>
+        <div id="input-section">
+            <input type="password" id="pin-input" placeholder="Enter PIN">
+            <button class="green-button" onclick="enterPin()">OK</button>
+        </div>
+        <div id="controls" class="controls hidden">
+            <div class="operation">
+                <button class="green-button" onclick="checkBalance()">Account Balance</button>
+            </div>
+            <div class="operation">
+                <input type="number" id="amount-input" placeholder="Enter Amount">
+                <button class="green-button" onclick="depositMoney()">Deposit</button>
+                <button class="green-button" onclick="withdrawMoney()">Withdraw</button>
+            
+                <button class="green-button" onclick="showHistory()">Transaction History</button>
+                <input type="password" id="new-pin-input" placeholder="Enter New PIN">
+                <button class="green-button" onclick="changePin()">Change PIN</button>
+            </div>
+                <button class="green-button" onclick="logout()">Log Out</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
